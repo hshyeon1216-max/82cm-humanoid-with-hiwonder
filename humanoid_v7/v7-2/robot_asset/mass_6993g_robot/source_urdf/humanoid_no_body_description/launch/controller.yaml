@@ -1,0 +1,59 @@
+humanoid_no_body_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  회전 163_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 163
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 166_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 166
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 168_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 168
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 172_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 172
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 176_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 176
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 179_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 179
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 182_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 182
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 185_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 185
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 188_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 188
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 192_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 192
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 196_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 196
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 199_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 199
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  회전 202_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 회전 202
+    pid: {p: 100.0, i: 0.01, d: 10.0}

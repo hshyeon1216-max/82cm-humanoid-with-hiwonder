@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Training outputs
+logs/
+**/logs/
+runs/
+**/runs/
+outputs/
+**/outputs/
+checkpoints/
+**/checkpoints/
+summaries/
+**/summaries/
+wandb/
+**/wandb/
+
+# Learned weights and exports
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary archives/backups
+*.zip
+*.7z
+*.rar
+*.bak
+*.bak_codex

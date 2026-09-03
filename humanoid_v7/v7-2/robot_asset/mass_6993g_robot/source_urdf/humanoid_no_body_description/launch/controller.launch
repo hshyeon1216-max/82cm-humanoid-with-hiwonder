@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find humanoid_no_body_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="humanoid_no_body" args="회전 163_position_controller 회전 166_position_controller 회전 168_position_controller 회전 172_position_controller 회전 176_position_controller 회전 179_position_controller 회전 182_position_controller 회전 185_position_controller 회전 188_position_controller 회전 192_position_controller 회전 196_position_controller 회전 199_position_controller 회전 202_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/humanoid_no_body/joint_states"/>
+</node>
+
+</launch>
